@@ -3,19 +3,19 @@
 //numbers, and ultimately use posX and posY to draw a circle.
 
 //Position (where we will draw the circle)
-int posX = 200;
-int posY = 200;
+float posX = 200;
+float posY = 200;
 
 //Velocity (is added to position)
-int velX = 3;
-int velY = 1;
+float velX = 3;
+float velY = 1;
 
 //Gravity (is added to velocity)
-int gravity = 1;
+float gravity = 1.2;
 
 //This will be used in when we call fill() below to set the color of each
 //circle we draw.
-int hue = 0;
+float hue = 0;
 
 void setup() {
   //Set the size of the window
