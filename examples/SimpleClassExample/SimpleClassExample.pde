@@ -2,18 +2,27 @@
 //
 //Because we defined a 'class' for Ball, it is now a valid type
 //of a variable (like int, float, etc. are by default).
-Ball ball;
+Ball[] circles;
+int numCircles = 10;
 
 void setup() {
   size(800, 600);
+  noStroke();
+  colorMode(HSB, 100);
   
-  //Instantiate a Ball and store it in the ball variable we created above.
-  ball = new Ball(200, 200);
+  circles = new Ball[numCircles];
+  float h = random(0,100);
+  for (int i = 0; i < circles.length; i++) {
+    //Instantiate a Ball and store it in the ball variable we created above.
+    circles[i] = new Ball(random(0, width), random(0,height), h);
+  }
 }
 
 void draw() {
-  background(255);
+  background(0);
   
-  //Call the update function of the ball (see the Ball class).
-  ball.update();
+  for (int i = 0; i < circles.length; i++) {
+    //Instantiate a Ball and store it in the ball variable we created above.
+    circles[i].update();
+  }
 }
