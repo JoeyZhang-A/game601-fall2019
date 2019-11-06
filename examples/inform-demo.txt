@@ -1,0 +1,36 @@
+"601Demo" by Mike Treanor
+
+The player has a number called hunger. The hunger of the player is 0.
+
+Every turn:
+		now the hunger of the player is the hunger of the player + 1;
+		say "The player is [hunger of the player] hungry."
+
+Every turn when the hunger of the player is greater than 3:
+		say "HUMGRRRYYYYGYGYTYYY!!!!";
+		
+Every turn when the player is in the Game Lab:
+		now the hunger of the player is the hunger of the player - 5;
+		say "The wisdom of those who came before you has satiated you.";
+
+Instead of asking Dr K about "laptop cart":
+		say "Dr K, with a twinkle in his eye, says 'here, let me give you this key.'";
+		now the player is holding the key;
+		
+
+After opening the laptop cart:
+		say "Nice! I can finally steal all these laptops.";
+
+The Classroom is a room. The description of the Classroom is "The classroom has four walls and carpet. To the north you see a big silly swinging door that doesn't shut.".
+
+The player is in the Classroom.
+
+The Game Lab is a room. "As you enter the game lab you can feel the game design wisdow of the generations before." The Game Lab is north of the Classroom.
+
+The pile of game stuff is a thing. "There are a pile of old game stuffs that don't work yet.". The pile of game stuff is in the game lab.
+
+The laptop cart is a locked not portable container in the Game Lab.
+
+The key is an thing that unlocks the laptop cart. Dr K is holding the key.
+
+Dr K is a man in the Game Lab. "Dr K is a dude in VR goggles hanging out in the room." The description of Dr K is "You see Dr. K and dreams of laptop usage fills your mind. Imagine all the things you can do! But wait. Didn't Dr. M say that you don't need fancy graphics to make games? Whatever. I want that laptop!".
