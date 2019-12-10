@@ -3,17 +3,119 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>Game 601 Portfolio</title>
-  <meta name="description" content="The stuff Teddy in Game 601>
-  <meta name="author" content="Te Wang">
-
+  <title>GAME 601 Portfolio (Fall 2019)</title>
+  <meta name="description" content="What I made in GAME 601 (Game Programming) at American University in Fall 2019">
+  <meta name="author" content="YOUR NAME">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-  <hi>Hello this is Joey's website!</h1>
-  <a href="./Hungry Joey.html">My Twine Game</a>
-  <a href="./Girlfriend Crisis.html">My Final Game</a>
+  <div class="jumbotron m-0">
+    <h1 class="display-4">Zongyi Zhang</h1>
+    <p class="lead">My games from GAME 601 - Game Prototyping at American University in Fall 2019</p>
+  </div>
+  <div class="card">
+    <div class="card-header h3">Game Modification: Number guessing game modification</div>
+    <div class="card-body row">
+      <div class="col-4">
+        <img class="img-fluid" src="./image4.jpg">
+      </div>
+      <div class="col-6">
+        Goal: Use strategy to get to the number earlier than your opponent.
+
+Basic Rules:	
+1.The number should be integer.
+2.The number can not be changed once the game start.
+3.The questions must be mathematical, same type of question can only be asked once. 
+For example, if player1 asks "Is the number odd or even", this"odd or even" type of question 
+can not ask again for player1, neither can player2. In this case you have to think of some other
+questions to get information.
+You cannot ask "Is the number more or less than 30" , but" Is it more than/less than 30", and more than/ less than will not be consider the same type of question.
+4.Both players can only take notes on the same paper.
+
+Procedure:
+ Game start.
+1.Player1 and player2 each picks a number between 1-100.
+
+2.Round1 starts. Player2(P2) asks player1(P1) a question, then P1 asks P2, after that, game moves to Round2. In round 2, P2 asks first. Write down the procedure.
+
+3.Game ends until one of the player gets the other player's number, after that round ends. 
+If both of the player get it in one round, it will be consider DRAW, otherwise who get the right guessing wins. 
+
+4.Players can choose to guess, instead of asking question in anytime of the game. It will be consider a movement in a round and then the other player moves. However, the timing to start guessing is also a strategy. Use question to limit the range before guessing!
+
+Each of the player knows exactly how close his opponent is to the number and what kind of question his opponent can use to limit the range, so choose the question in right time may both strength himself and weaken his opponent.
+      </div>
+      <div class="col-2">
+        <a class="btn btn-primary btn-block" href="./LINK_TO_YOUR_PLAYABLE_GAME_OR_RULES_FOR_YOUR_GAME" role="button">PLAY</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header h3">(Midterm) Non-Digital Game: Escape</div>
+    <div class="card-body row">
+      <div class="col-4">
+        <img class="img-fluid" src="./image3.png"> 
+         
+        
+      </div>
+      <div class="col-6">
+        It's a game about give up. 
+Backgronud: A group of air crash survivor landed in a forest, lack of supplies, seeking for the way out. 
+Player draw a few cards at the beginning of the round, the cards contain item cards, character cards and event cards. Skills, consume of water/food per round is written on character cards.
+ At first, the player have all the character cards and the item cards. As the game goes, puzzles occur(draw from the deck randomly), then the player must use his cards to solve the problem. But after items are used up, all character left will be frail and can't survive from another strike.
+It's hard to choose whether to use the items or to abandon some character cards(each round they consume food and water) .
+Might be oppressive sometimes, but that's what I want to show in game. 
+Try to get to the destination with more character cards left.
+  
+      Rules:There are 3 main elements in this game.
+1.Food  2.Water.  3.Action point
+If food or water goes to 0, the characters will die. 
+
+As the game goes, player need to choose to wisely use the character to go explore. More survivors go explore means more consume, but less will increase the risk of trouble.
+
+To solve a problem occur in event card, the explore team need to have more action point(add up) than the required point on event card. In this way, player need to balance the stock of stuffs and the number of survivors in explore team The number of character card in the card pool should be about 15, 
+so that every game the player will have a different experience. 
+If the explore team don't have enough action point an event card required, the members in the team will die.
+
+As the games goes, after a few rounds, it is very likely that there is a short of food or water for the whole team. Player need to wisely abandon some  "useless" character during night time. However this also means the action point in total will get less. 
+
+        <img class="img-fluid" src="./image1.png"> 
+        <img class="img-fluid" src="./image2.png">  
+
+      </div>
+      <div class="col-2">
+        <a class="btn btn-primary btn-block" href="./LINK_TO_YOUR_PLAYABLE_GAME_OR_RULES_FOR_YOUR_GAME" role="button">PLAY</a>
+     
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header h3">Visual Novel or Interactive Fiction: Hungry Joey</div>
+    <div class="card-body row">
+      <div class="col-4">
+        <img class="img-fluid" src="./YOUR_IMAGE_FILENAME">
+      </div>
+      <div class="col-6">
+        This game requires you to make smart choice to get over the danger. If you didn't finish the most emergency things, you will lose.
+      </div>
+      <div class="col-2">
+        <a class="btn btn-primary btn-block" href="./Hungry Joey.html" role="button">PLAY</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header h3">(Final) Digital Game: Girlfriend Crisis</div>
+    <div class="card-body row">
+      <div class="col-4">
+        <img class="img-fluid" src="./YOUR_IMAGE_FILENAME">
+      </div>
+      <div class="col-6">This is a twine game. It's about choosing the right words when having a fight with your girlfriend. If you say the wrong thing, she might get really angry.
+      </div>
+      <div class="col-2">
+        <a class="btn btn-primary btn-block" href="./Girlfriend Crisis.html" role="button">PLAY</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
-
